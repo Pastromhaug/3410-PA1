@@ -133,6 +133,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1450,600)" to="(1480,600)"/>
     <wire from="(1210,490)" to="(1210,560)"/>
     <wire from="(1310,240)" to="(1320,240)"/>
+    <wire from="(790,500)" to="(960,500)"/>
     <wire from="(2710,500)" to="(2710,810)"/>
     <wire from="(1780,180)" to="(2130,180)"/>
     <wire from="(310,330)" to="(610,330)"/>
@@ -171,7 +172,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1910,380)" to="(1910,390)"/>
     <wire from="(1060,60)" to="(1060,520)"/>
     <wire from="(2420,440)" to="(2420,550)"/>
-    <wire from="(790,500)" to="(930,500)"/>
     <wire from="(1850,420)" to="(1930,420)"/>
     <wire from="(3160,70)" to="(3160,210)"/>
     <wire from="(1820,740)" to="(3190,740)"/>
@@ -564,12 +564,13 @@ addiu $2, $1, 4
       <a name="selloc" val="tr"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="1" loc="(960,500)" name="NOT Gate"/>
     <comp lib="2" loc="(2440,420)" name="Multiplexer">
       <a name="width" val="32"/>
     </comp>
     <comp lib="2" loc="(2480,130)" name="Multiplexer"/>
-    <comp lib="7" loc="(1240,400)" name="RegisterFile"/>
+    <comp lib="7" loc="(1240,400)" name="RegisterFile">
+      <a name="trigger" val="falling"/>
+    </comp>
     <comp lib="0" loc="(2320,220)" name="Splitter">
       <a name="fanout" val="1"/>
       <a name="incoming" val="32"/>
