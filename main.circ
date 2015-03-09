@@ -562,14 +562,17 @@ j EXIT
 jr $1
 jal EXIT
 jalr $1, $2
+addiu $3, $0, 9		# 9 is stored in reg 3
 beq $1, $2, EXIT
 bne $1, $2, EXIT
 blez $1, EXIT
 bgtz $1, EXIT
 bltz $1, EXIT
+addiu $4, $0, 10	# 10 is stored in reg 4
 bgez $1, EXIT
 lw $3, 0($2)
 lb $4, 0($1)
+addiu $5, $0, 11	# 11 is stored in reg 5
 lbu $5, 0($1)
 sw $1, 0($6)
 sb $1, 0($7)
